@@ -11,11 +11,8 @@
 
 /* ----- default styles ----- */
 body { background-image:url(../images/grungeBG.jpg);
-	background-repeat:no-repeat; 
-	background-position:center center;
-	background-color:#000000; 
-	font-size:16px; 
-}
+	background-repeat:no-repeat; background-position:center center;
+	background-color:#000000; font-size:16px; }
 
 h1 {
 	font-family: 'GOT_font';
@@ -34,22 +31,22 @@ main {
 #imageContainer {
 	width:600px;
 	height:360px;
-	background-color:grey;
 	margin:0 auto;
+
+	/*uncomment below to hide house banners*/
 	overflow:hidden;
 }
 
-#houseImages { 
-	position: relative; 
-	width: 4000px; t
-	ransition: all .5s; 
-}
-
+#houseImages { position:relative; width:5300px; transition: all .5s; }
 #houseImages img { float:left; }
 
-#bottomNav { margin-top:30px; }
+#bottomNav
+{
+  margin-top:30px;
+}
 
-#navList li {
+#navList li
+{
 	display:inline;
 	list-style-type:none;
 	padding:0px 10px;
@@ -88,6 +85,12 @@ main {
 
 .arryn { background-position:-253px -54px; }
 .arryn:hover { background-position:-253px 0px; }
+
+.targaryen { background-position: -304px -54px; }
+.targaryen:hover { background-position: -304px 0px; }
+
+.tyrell { background-position: -355px -54px; }
+.tyrell:hover {background-position: -355px 0px; }
 /* ----- end image sprite ----- */
 
 /* ----- classes for transitions ----- */
@@ -108,32 +111,26 @@ main {
 
 .lightbox {
 	display: none;
-	background-color: rgba(0,0,0,0.8);
-
 	position: absolute;
 	top: 0;
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: rgba(0,0,0,0.95);
 }
 
-.show-lightbox {
-	display: block;
-}
-
-.lightbox-close {
+.close-lightbox {
+	position: absolute;
+	right: 12px;
+	top: 12px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
 	color: white;
-	padding-right: 50px;
-	float: right;
-	display: block;
-	font-size: 30px;
 	cursor: pointer;
-	padding-top: 20px;
 }
 
-.video-player {
-
-}
-
+.show-lightbox { display: block; }
 
 video {
 	width: 80%;
@@ -141,10 +138,9 @@ video {
 	border: thin solid #949393;
 }
 
-.house-info {
-	color: white;
-	font-size: 1.5em;
-	line-height: 1.5;
-	width: 75%;
-	margin: 0 auto;
+[data-icon]
+{
+  font-size:3em;
+  color: grey;
+  cursor: pointer;
 }
