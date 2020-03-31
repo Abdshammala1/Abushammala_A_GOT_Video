@@ -1,2 +1,9 @@
 # GOT_video
-Update this with a proper readme doc
+Game of thrones vides library
+developed using HTML , CSS & JS
+
+By : Abdalrahman Abushammala
+
+Professor : Trevor Van Rys
+
+Interactive Media Design
