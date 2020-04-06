@@ -26,6 +26,7 @@ var volumeBar = document.querySelector("#volume-bar");
   }
   }
 
+  
   function progressBar(){
     var time = video.duration * (seekBar.value / 100);
     video.currentTime = time;
